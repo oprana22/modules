@@ -8,7 +8,11 @@ process PROPR_GETCLR {
         'biocontainers/r-propr:4.2.6' }"
 
     input:
+<<<<<<< Updated upstream
     tuple val(meta), path(matrix_in)
+=======
+    tuple val(meta), path(count)
+>>>>>>> Stashed changes
     //val(meta) because inputs are sample specific
 
     output:
@@ -19,6 +23,7 @@ process PROPR_GETCLR {
     task.ext.when == null || task.ext.when
 
     script:
+<<<<<<< Updated upstream
     def args = task.ext.args ?: ''
     def prefix = task.ext.prefix ?: "${meta.id}"
 
@@ -44,4 +49,7 @@ process PROPR_GETCLR {
         : \$(echo \$(r-propr --version 2>&1) | sed 's/^.*r-propr //; s/Using.*\$//' ))
     END_VERSIONS
     """
+=======
+    template 'getclr.R'
+>>>>>>> Stashed changes
 }

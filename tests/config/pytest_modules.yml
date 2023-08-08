@@ -2891,6 +2891,17 @@ prokka:
   - modules/nf-core/prokka/**
   - tests/modules/nf-core/prokka/**
 
+<<<<<<< Updated upstream
+=======
+propr/getalr:
+  - modules/nf-core/propr/getalr/**
+  - tests/modules/nf-core/propr/getalr/**
+
+propr/getclr:
+  - modules/nf-core/propr/getclr/**
+  - tests/modules/nf-core/propr/getclr/**
+
+>>>>>>> Stashed changes
 proteus/readproteingroups:
   - modules/nf-core/proteus/readproteingroups/**
   - tests/modules/nf-core/proteus/readproteingroups/**

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ## TODO nf-core: Please run the following command to build this file:
 #                nf-core modules create-test-yml /getclr
 - name: "propr getclr"
@@ -11,3 +12,14 @@
     - path: "output/propr/versions.yml"
       md5sum: a01fe51bc4c6a3a6226fbf77b2c7cf3b
     
+=======
+- name: propr getclr test_propr_getclr
+  command: nextflow run ./tests/modules/nf-core/propr/getclr -entry test_propr_getclr -c ./tests/config/nextflow.config -c ./tests/modules/nf-core/propr/getclr/nextflow.config
+  tags:
+    - propr/getclr
+    - propr
+  files:
+    - path: output/propr/data_clr.csv
+      md5sum: 0374109d1251f0410578c4e6f587c416
+    - path: output/propr/versions.yml
+>>>>>>> Stashed changes
